@@ -1,5 +1,3 @@
-# Eleventy starter!
+# Orange Cat Parade
 
-- Sass workflow
-- Basic directory structure
-- Passthroughs for static assets
+Creating a repo of zines and ephemera created for my Patreon in 2022. 
