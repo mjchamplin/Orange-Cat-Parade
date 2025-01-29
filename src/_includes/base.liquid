@@ -30,14 +30,18 @@ title: My default title
     <meta property="og:image:alt" content="{{ description }}">
 
     <link rel="stylesheet" href="/_assets/css/main.css">
-
-    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/jna5cos.css">
     <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+
   </head>
 
 <body>
-  <main id="moo" class="full-width {{ slug | downcase }}">
+  <header></header>
+  <main>
+    <!--a href="/">Home</a-->
+    <h1>{{ title }}</h1>
     {{ content }}
   </main>
+
 </body>
 </html>

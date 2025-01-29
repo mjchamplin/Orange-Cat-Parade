@@ -4,6 +4,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
 		files: './build/_assets/css/**/*.css'
 	});
+
+  eleventyConfig.addPassthroughCopy("src/_assets/");
 	
   return {
     dir: {

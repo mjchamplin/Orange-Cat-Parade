@@ -3,6 +3,6 @@
 module.exports = {
   author: '',
   copyrightYear: (new Date()).getFullYear(),
-  siteTitle: '',
+  siteTitle: 'Orange Cat Parade',
   canonical: ''
 }
