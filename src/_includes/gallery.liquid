@@ -1,0 +1,58 @@
+---
+title: My default title
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="{{ site.canonical }}">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/_assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/_assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/_assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/_assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+
+    <title>{{ title }} - {{ site.siteTitle }}</title>
+
+    <meta name="description" content="{{ description }}">
+    <meta name="application-name" content="{{ site.siteTitle }}">
+    <meta name="author" content="{{ site.author }}">
+
+    <meta property="og:site_name" content="{{ site.siteTitle }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:url" content="{{ site.canonical }}{{ page.url }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ data.url }}/_assets/img/share-preview.jpg">
+    <meta property="og:image:alt" content="{{ description }}">
+
+    <!-- Styles for Glide.js -->
+    <link rel="stylesheet" href="/_assets/css/glide.core.min.css">
+
+    <link rel="stylesheet" href="/_assets/css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jna5cos.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/@glidejs/glide@3.6.2/dist/glide.js"></script>
+  </head>
+
+<body>
+  <header>
+
+  </header>
+  <main>
+    <a href="/">Home</a>
+    <h1>{{ title }}</h1>
+    {{ content }}
+  </main>
+
+<script>
+  new Glide('.glide').mount()
+</script>
+
+
+</body>
+</html>
