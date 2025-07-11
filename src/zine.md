@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: gallery
 title: Zine
 description: ''
 ---

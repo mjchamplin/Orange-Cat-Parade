@@ -1,0 +1,56 @@
+---
+title: My default title
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="{{ site.canonical }}">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/_assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/_assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/_assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/_assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+
+    <title>{{ title }} - {{ site.siteTitle }}</title>
+
+    <meta name="description" content="{{ description }}">
+    <meta name="application-name" content="{{ site.siteTitle }}">
+    <meta name="author" content="{{ site.author }}">
+
+    <meta property="og:site_name" content="{{ site.siteTitle }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:url" content="{{ site.canonical }}{{ page.url }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ data.url }}/_assets/img/share-preview.jpg">
+    <meta property="og:image:alt" content="{{ description }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/_assets/css/main.css">
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+
+  </head>
+
+<body>
+  <header>
+    <div class="site-title">
+      <h1>
+        <a href="/">{{ site.siteTitle }}</a>
+      </h1>
+    </div>
+  </header>
+
+  <main>
+    <!--a href="/">Home</a-->
+    {{ content | safe }}
+  </main>
+
+</body>
+</html>

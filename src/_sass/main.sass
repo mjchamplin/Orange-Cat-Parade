@@ -20,12 +20,14 @@ p:empty
 $white: #fff
 $body-text: #222
 $key-color: #FE621D
+$secondary-color: #DD7009
 $off-black: #222
 
 body
 	background-color: $white
 	color: $body-text
-	font-family: "gelica", sans-serif
+	font-family: "Literata", serif
+
 
 a 
 	color: $body-text
@@ -37,7 +39,7 @@ img
 	max-width: 100%
 
 p
-	font-size: 1.25rem
+	font-size: 1.125rem
 	line-height: 1.525em
 
 ol, ul
@@ -45,25 +47,96 @@ ol, ul
 	line-height: 1.525em
 
 h1
-	font-size: 2.5rem
+	font-size: 2rem
 
+h2
+	font-size: 1.5rem
+
+h3
+	font-size: 1.125rem
+
+ul 
+	margin: 0 0 1em
+	li
+		margin: 0 0 .25em
+	li:last-of-type
+		margin: 0
 .orange
 	background-color: whitesmoke
 	color: $key-color
 	padding: 0 .2em
 
+.dark-orange
+	color: $secondary-color
+
+.big 
+	h1
+		font-size: 3em
+		line-height: 120%
+		font-weight: 700	
+	p
+		font-size: 1.25rem
+		line-height: 1.525em 
+
 main
 	width: 100%
 	max-width: 752px
 	margin: 0 auto
-	padding: 0 1rem
+	padding: 0 2rem
+	&.blank
+		@media only screen and (min-width: 800px)
+			padding: 1rem 0
+
 
 header
 	width: 100%
-	min-height: 160px
 	background-image: url('/_assets/img/cats.jpg')
 	background-size: cover
 	margin: 0 0 3em
+	padding: 1.25em 0
+	min-height: 200px
+
+footer
+	width: 100%
+	background-image: url('/_assets/img/cats.jpg')
+	background-size: cover
+	margin: 3em 0 0
+	padding: 1.25em 0
+	min-height: 200px
+	transform: rotate(180deg)
+
+
+.site-title
+	background-color: #fff
+	width: 100%
+	max-width: 480px
+	margin: 0 auto
+	padding: .25rem 0
+	text-align: center
+	a
+		text-decoration: none
+	h1 
+		font-size: 2.5rem
+		font-weight: 800
+		padding: 0
+		margin: 0
+		letter-spacing: -.015em
+
+.note-inline
+	font-size: .8em
+	font-style: italic
+
+.alert
+	width: 100%
+	background-color: #F8F8F8
+	border: solid 1px #E0E0E0
+	border-radius: .5rem
+	padding: 1.5rem
+	p
+		margin: 0 0 1em
+		font-size: 1rem
+	p:last-of-type
+		margin: 0
 
 .card
 	background-color: #ffffff
@@ -137,7 +210,7 @@ header
 	display: block 
 	top: 50% 
 	z-index: 2 
-	color: white 
+	color: #000 
 	text-transform: uppercase 
 	padding: 9px 12px 
 	background-color: transparent 

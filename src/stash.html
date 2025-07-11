@@ -1,0 +1,125 @@
+---
+layout: base
+title: Orange Cat Parade
+description: ''
+---
+
+<div class="alert">
+    <p>This site was originally created for my 2022 Patreon project. You can learn more about that <a href="story">on the story page</a>. </p>
+    <p>I'm currently transitioning the site to be used for general zine and self-publishing resources. It's ongoing and will likely be in a state of flux for a while.</p>
+</div>
+
+
+<section>
+    <h2>Monthly Zines: </h2>
+    <div class="full-width-grid">
+
+        <article class="card grid-item-2">
+            <div class="card-thumbnail">
+                <img src="/_assets/img/zine-thumbnail-1.jpg">
+            </div>
+            <div class="card-caption">
+                <h3>1. Library Zine</h3>
+                <p>
+                    Made at my neighborhood library on an old Xerox machine, as the lord intended.
+                </p>
+            </div>
+        </article>
+
+        <article class="card grid-item-2">
+            <div class="card-thumbnail">
+                <img src="/_assets/img/zine-thumbnail-2.jpg">
+            </div>
+            <div class="card-caption">
+                <h3>2. From a Long Day in February</h3>
+                <p>
+                    A long, long day in black and white photographs.
+                </p>
+            </div>
+        </article>
+        <article class="card grid-item-2">
+            <div class="card-thumbnail">
+                <img src="/_assets/img/zine-thumbnail-3.jpg">
+            </div>
+            <div class="card-caption">
+                <h3>3. Drawings of Trees</h3>
+                <p>
+                    Pretty much what it sounds like. Trees...pen...and ink!
+                </p>
+            </div>
+        </article>
+
+        <article class="card grid-item-2">
+            <div class="card-thumbnail">
+                <img src="/_assets/img/zine-thumbnail-4.jpg">
+            </div>
+            <div class="card-caption">
+                <h3>4. "Magazine"</h3>
+                <p>
+                    A whole little magazine.
+                </p>
+            </div>
+        </article>
+
+        <article class="card grid-item-2">
+            <div class="card-thumbnail">
+                <img src="/_assets/img/zine-thumbnail-5.jpg">
+            </div>
+            <div class="card-caption">
+                <h3>5. Loot</h3>
+                <p></p>
+            </div>
+        </article>
+
+        <article class="card grid-item-2">
+            <div class="card-thumbnail">
+                <img src="/_assets/img/zine-thumbnail-6.jpg">
+            </div>
+            <div class="card-caption">
+                <h3>6. Bean Zine*</h3>
+                <p></p>
+            </div>
+        </article>
+
+        <article class="card grid-item-2">
+            <div class="card-thumbnail">
+                <img src="/_assets/img/zine-thumbnail-7.jpg">
+            </div>
+            <div class="card-caption">
+                <h3>7. Arrangements*</h3>
+                <p></p>
+            </div>
+        </article>
+
+    </div>
+<br/>
+<small>*previously unreleased</small>
+<br/><br/><br/>
+
+## Other Stuff
+<div style="margin: 4em 0; background-color: #eee">
+    <ul>
+    {%- for post in collections.all -%}
+        <li class="archive-list-item">
+            <a href="{{ post.url }}"><code>{{ post.url }}</code></a>
+            {% if post.data.description %}
+                {{ post.data.description }}
+            {% else %}
+                <p><em>No description</em></p>
+            {% endif %}
+            <ul>
+                {%- for tag in post.data.tags -%}
+                    <li class="tag">
+                        {{ tag }}
+                    </li>
+                {%- else -%}
+                    <li class="notags">
+                        No tags
+                    </li>
+                {%- endfor -%}
+            </ul>
+      </li>
+    {%- endfor -%}
+    </ul>
+</div>
+
