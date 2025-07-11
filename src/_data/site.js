@@ -1,8 +1,8 @@
 'use strict'
 
 module.exports = {
-  author: '',
+  author: 'Michael Champlin',
   copyrightYear: (new Date()).getFullYear(),
   siteTitle: 'Orange Cat Parade',
-  canonical: ''
+  canonical: 'https://orangecatparade.com'
 }
